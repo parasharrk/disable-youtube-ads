@@ -1,0 +1,13 @@
+{
+  "name": "Disable Ads on youTube",
+  "description": "Disable Ads on youTube",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*",
+          "http://www.youtube.com/*", "http://youtube.com/*"],
+      "js": ["disable_ads.js"]
+    }
+  ],
+  "manifest_version": 2
+}
